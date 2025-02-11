@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Paola</title>
+    <style>
+        body {
+            background-color: #D8BFD8; /* Morado pastel */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+        .mensaje {
+            text-align: center;
+            font-size: 24px;
+            font-family: 'Arial', sans-serif;
+            color: #5A3E36;
+            font-weight: bold;
+            position: relative;
+            padding: 20px;
+        }
+        .lineas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        .lineas::before, .lineas::after {
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            border: 5px solid #5A3E36;
+        }
+        .lineas::before {
+            top: 0;
+            left: 0;
+            border-right: none;
+            border-bottom: none;
+        }
+        .lineas::after {
+            bottom: 0;
+            right: 0;
+            border-left: none;
+            border-top: none;
+        }
+        .flores {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        .flores img {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+        }
+        .flor1 { top: 10%; left: 5%; }
+        .flor2 { top: 20%; right: 10%; }
+        .flor3 { bottom: 15%; left: 20%; }
+        .flor4 { bottom: 5%; right: 5%; }
+    </style>
+</head>
+<body>
+    <div class="mensaje">
+        Paola Ventura, eres el amor de mi vida ❤️
+    </div>
+    <div class="lineas"></div>
+    <div class="flores">
+        <img src="flor1.png" class="flor1">
+        <img src="flor2.png" class="flor2">
+        <img src="flor3.png" class="flor3">
+        <img src="flor4.png" class="flor4">
+    </div>
+</body>
+</html>
